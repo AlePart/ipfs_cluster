@@ -24,7 +24,7 @@ chmod u+x /var/lib/docker/volumes/node_1/_data/start.sh
 
 Pull the image
 ```
-docker pull alepart/ipfs_cluster
+docker pull alepart/ipfs_cluster:1.0
 ```
 
 run container with compose
