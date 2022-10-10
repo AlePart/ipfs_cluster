@@ -31,3 +31,9 @@ run container with compose
 ```
 docker compose up
 ```
+
+with
+```
+docker exec -it  ipfs_cluster-C-1  /bin/bash
+```
+you should be able to modify configuration of cluster and ipfs
