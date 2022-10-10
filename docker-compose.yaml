@@ -1,15 +1,17 @@
 version: "3.9"
 services:
   C:
-    image: "alepart/ipfs_cluster"
+    image: "alepart/ipfs_cluster:1.0"
     network_mode: "net_1"
     volumes:
       - node_1:/root:rw
       - node_1_data:/root/.ipfs:rw
+      - node_1_cluster_data:/root/.ipfs-cluster:rw
     command: "/root/start.sh"
 volumes:
   node_1:
     external: true
   node_1_data:
+  node_1_cluster_data:
 
     
