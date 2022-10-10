@@ -2,7 +2,7 @@ version: "3.9"
 services:
   C:
     image: "alepart/ipfs_cluster"
-    network_mode: "net1"
+    network_mode: "net_1"
     volumes:
       - node_1:/root:rw
       - node_1_data:/root/.ipfs:rw
