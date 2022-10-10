@@ -24,10 +24,16 @@ chmod u+x /var/lib/docker/volumes/node_1/_data/start.sh
 
 Pull the image
 ```
-docker pull alepart/ipfs_cluster
+docker pull alepart/ipfs_cluster:1.0
 ```
 
 run container with compose
 ```
 docker compose up
 ```
+
+with
+```
+docker exec -it  ipfs_cluster-C-1  /bin/bash
+```
+you should be able to modify configuration of cluster and ipfs
