@@ -1,4 +1,4 @@
-FROM alepart/ipfs_persistent_node
+FROM alepart/ipfs_persistent_node:1.3
 
 RUN apt update -y
 RUN apt upgrade -y
@@ -19,8 +19,17 @@ RUN chmod u+x ipfs-cluster-follow/ipfs-cluster-follow
 RUN cp ipfs-cluster-service/ipfs-cluster-service /usr/bin
 RUN cp ipfs-cluster-ctl/ipfs-cluster-ctl /usr/bin
 RUN cp ipfs-cluster-follow/ipfs-cluster-follow /usr/bin
+
 WORKDIR /root/ 
 RUN rm -rf ipfs-cluster
+
+RUN git clone https://github.com/AlePart/ipfs_cluster.git
+WORKDIR ipfs_cluster
+RUN cp start.sh /root/
+RUN cp .init /root/
+WORKDIR /root/ 
+RUN rm -rf ipfs_cluster
+RUN chmod u+x start.sh
 
 
 
