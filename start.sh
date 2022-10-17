@@ -14,7 +14,6 @@ if test -f "$FILE"; then
 fi
 
 echo "IPFS START CLUSTER"
-sleep 10
 NOW=`date '+%F_%H:%M:%S'`
 echo "$NOW" >> logstart.log
 ipfs-cluster-service daemon  & 
