@@ -9,7 +9,7 @@ if test -f "$FILE"; then
     ipfs-cluster-service init -f
     touch logstart.log
     rm $FILE
-    sed -i 's,/ip4/127.0.0.1/tcp/5001,/ip4/0.0.0.0/tcp/5001,g' ./ipfs/config
+    sed -i 's,/ip4/127.0.0.1/tcp/5001,/ip4/0.0.0.0/tcp/5001,g' /root/.ipfs/config
     
 fi
 
