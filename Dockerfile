@@ -30,6 +30,4 @@ RUN cp .init /root/
 WORKDIR /root/ 
 RUN rm -rf ipfs_cluster
 RUN chmod u+x start.sh
-
-
-
+CMD /root/start.sh
