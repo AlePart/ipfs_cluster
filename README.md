@@ -2,7 +2,7 @@
 
 Pull the image
 ```
-docker pull alepart/ipfs_cluster:1.1
+docker pull alepart/ipfs_cluster:1.2
 ```
 run container with compose
 ```
